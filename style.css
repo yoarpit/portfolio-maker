@@ -15,7 +15,7 @@ body{
     margin-left: 15px;
     margin-right: 150px;
     font-size: 30px;
-    float: right;
+    
 
 }
 .p {
@@ -34,9 +34,7 @@ body{
 .head{
     color: white;
     text-align: center;
-    float: left;
-    margin-top: 100px;
-    margin-left: 60px;
+    margin-top: 140px; 
 
 
         }
@@ -49,14 +47,38 @@ body{
 }
 
 
-.img{
+.img {
 
-    margin-top: 60px;
+    margin-top:90px;
     border: 15px solid red;
-    margin-left: 20px;
-    width: 320px;
-    height: 320px;
     
+    width: 300px;
+    height: 300px;
+   }
+
+.it{
+     display: flex; 
+    justify-content: space-between;
     
+    width: 900px;
+    margin-left: 100px;
+
 }
+
+@media only screen and (max-width:600px) {
+    .it{
+        display: inline;
+        justify-content: center;   
+
+
+        
+        
+    }
+
+    .head ,.img{
+        margin-top: 50px;
+        
+    }
+}
+
 
