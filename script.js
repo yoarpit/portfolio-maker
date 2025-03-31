@@ -8,7 +8,7 @@ window.onload = function() {
             
         .then(data => {
                 // Set the name with Typed.js effect
-                document.getElementById('name').textContent = data.name;
+                document.getElementById('nam').textContent = data.name;
 
     
                 // Set profession with Typed.js effect
@@ -81,9 +81,65 @@ window.onload = function() {
                 window.location.href=demo2
             };
 
+             
+            const p3img = document.getElementById('p3');
+            p3img.src = data.project3[0];
+            document.getElementById('p3i').textContent = data.project3[1];
+            document.getElementById('p3s').textContent = data.project3[2];
+            const github3=data.project3[3];
+            document.getElementById("p3g").onclick=function(){
+                window.location.href=github3
+            };
+            const demo3=data.project3[4];
+            document.getElementById("p3d").onclick=function(){
+                window.location.href=demo3
+            };
+
+               
+            const p4img = document.getElementById('p4');
+            p4img.src = data.project4[0];
+            document.getElementById('p4i').textContent = data.project4[1];
+            document.getElementById('p4s').textContent = data.project4[2];
+            const github4=data.project4[3];
+            document.getElementById("p4g").onclick=function(){
+                window.location.href=github3
+            };
+            const demo4=data.project4[4];
+            document.getElementById("p4d").onclick=function(){
+                window.location.href=demo4
+            };
 
 
 
+               
+            const p5img = document.getElementById('p5');
+            p5img.src = data.project5[0];
+            document.getElementById('p5i').textContent = data.project5[1];
+            document.getElementById('p5s').textContent = data.project5[2];
+            const github5=data.project5[3];
+            document.getElementById("p5g").onclick=function(){
+                window.location.href=github5
+            };
+            const demo5=data.project5[4];
+            document.getElementById("p5d").onclick=function(){
+                window.location.href=demo5
+            };
+
+
+
+               
+            const p6img = document.getElementById('p6');
+            p6img.src = data.project6[0];
+            document.getElementById('p6i').textContent = data.project6[1];
+            document.getElementById('p6s').textContent = data.project6[2];
+            const github6=data.project6[3];
+            document.getElementById("p6g").onclick=function(){
+                window.location.href=github6
+            };
+            const demo6=data.project6[4];
+            document.getElementById("p6d").onclick=function(){
+                window.location.href=demo6
+            };
             })
 
             
