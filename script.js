@@ -31,21 +31,95 @@ window.onload = function() {
             secondimg.src = data.secondimage;
 
             document.getElementById('summery').textContent = data.summery;
+            // skills name?
+            document.getElementById('sh').textContent = data.skills[0];
+            document.getElementById('ge').textContent = data.skills[1];
+            document.getElementById('am').textContent = data.skills[2];
+            document.getElementById('su').textContent = data.skills[3];
+            document.getElementById('ta').textContent = data.skills[4];
+            document.getElementById('le').textContent = data.skills[5];
+            document.getElementById('sd').textContent = data.skills[6];
+            document.getElementById('em').textContent = data.skills[7];
+            // skills summery
+            document.getElementById('s1').textContent = data.ssummery[0];
+            document.getElementById('s2').textContent = data.ssummery[1];
+            document.getElementById('s3').textContent = data.ssummery[2];
+            document.getElementById('s4').textContent = data.ssummery[3];
+            document.getElementById('s5').textContent = data.ssummery[4];
+            document.getElementById('s6').textContent = data.ssummery[5];
+            document.getElementById('s7').textContent = data.ssummery[6];
+            document.getElementById('s8').textContent = data.ssummery[7];
+
+
+            const p1img = document.getElementById('p1');
+            p1img.src = data.project1[0];
+            document.getElementById('p1i').textContent = data.project1[1];
+            document.getElementById('p1s').textContent = data.project1[2];
+            const github1=data.project1[3];
+            document.getElementById("p1g").onclick=function(){
+                window.location.href=github1
+            };
+            const demo1=data.project1[4];
+            document.getElementById("p1d").onclick=function(){
+                window.location.href=demo1
+            };
+
+
+
+
             
-    
+            const p2img = document.getElementById('p2');
+            p2img.src = data.project2[0];
+            document.getElementById('p2i').textContent = data.project2[1];
+            document.getElementById('p2s').textContent = data.project2[2];
+            const github2=data.project2[3];
+            document.getElementById("p2g").onclick=function(){
+                window.location.href=github2
+            };
+            const demo2=data.project1[4];
+            document.getElementById("p2d").onclick=function(){
+                window.location.href=demo2
+            };
+
+
+
 
             })
-                
-            
 
             
-            
-        
-        
-
         .catch(error => {
             console.error('Error loading the JSON data:', error);
         });
-};
+    }
+                
+
+
+
+            (function() {
+                emailjs.init("YOUR_USER_ID");
+              })();
+          
+              // Email submission handler
+              document.getElementById('email-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+          
+                const formData = new FormData(event.target);
+                
+                // Send email via EmailJS
+                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+                  .then(function(response) {
+                    console.log('Success:', response);
+                    document.getElementById('status-message').textContent = "Email sent successfully!";
+                  }, function(error) {
+                    console.log('Failed:', error);
+                    document.getElementById('status-message').textContent = "Failed to send email. Please try again.";
+                  });
+              }); 
+            
+
+            
+            
+        
+        
 
 

@@ -3,9 +3,13 @@
   "profession": ["Ninja","Shinobi","Akatsuki member"],
   "profileimage": "itachi1.jpg",
   "secondimage":"component/itachi.jpg",
-  "summery":"I am Itachi Uchiha, a member of the Uchiha clan and an elite shinobi. My actions may have been misunderstood, but every decision I made was for the greater good of the village and those Icherished"
-
-
+  "summery":"I am Itachi Uchiha, a member of the Uchiha clan and an elite shinobi. My actions may have been misunderstood, but every decision I made was for the greater good of the village and those Icherished",
+  "skills":["Sharingan","Genjustu","Amaterasu","Susanoo","Tactical Genius","Leadership","Self-Discipline","Emotional Resilience"],
+  "ssummery":["A powerful dōjutsu that enhances vision, allowing the user to predict movements and manipulate reality. Itachi's Sharingan also grants access to powerful techniques like Tsukuyomi and Amaterasu.","Expert in creating illusions that manipulate the mind of the victim, trapping them i mental paralysis or creating false realities. His mastery includes techniques","A fire-based technique that creates black flames which are said to burn anything they touch and are impossible to extinguish, even by Itachi's own control.","A defensive and offensive technique summoned using the Mangekyō Sharingan, creating a powerful ethereal warrior that serves as protection and a weapon in battle.","A brilliant strategist who always plans several steps ahead, outwitting opponents before they even realize it. Itachi's intelligence was key in manipulating situations to his advantage.","Although Itachi's leadership was often subtle, he was able to influence others and lead by example, particularly in controlling events behind the scenes for the greater good.","Itachi possessed an unwavering sense of self-discipline, always focusing on his mission despite immense personal cost and sacrifice.","Itachi remained emotionally composed even in the most difficult situations, sacrificing his family and facing death with the knowledge that his actions would lead to a better future for his brother, Sasuke."],
+  
+  "project1":["component/anbu.jpg", "Anbu Black Ops","Itachi served as a top-tier operative in Konoha’s elite Anbu unit, executing covert, high-risk missions to protect the village.", "https://getbootstrap.com/docs/5.0/forms/overview/","enter your project demo details" ],
+  "project2":["component/anbu.jpg", "Anbu Black ","Itachi served as a top-tier operative in Konoha’s elite Anbu unit, executing covert, high-risk missions to protect the village.", "https://getbootstrap.com/docs/5.0/forms/overview/","enter your project demo details" ],
+  "project3":["component/anbu.jpg", "Anbu Black Ops","Itachi served as a top-tier operative in Konoha’s elite Anbu unit, executing covert, high-risk missions to protect the village.", "https://getbootstrap.com/docs/5.0/forms/overview/","enter your project demo details" ]
 
 
 }
